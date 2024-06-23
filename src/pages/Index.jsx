@@ -62,7 +62,6 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/tooltip"
-import { Image } from "@/components/ui/image" // Import the Image component
 
 const countries = [
   { name: "France", capital: "Paris", description: "Known for its cuisine and the Eiffel Tower." },
@@ -143,7 +142,7 @@ const Index = () => {
                   {countries.map((country, index) => (
                     <TableRow key={index}>
                       <TableCell>
-                        <Image
+                        <img
                           src="/placeholder-image.jpg"
                           alt={`${country.name} image`}
                           className="w-10 h-10 object-cover rounded-full"
