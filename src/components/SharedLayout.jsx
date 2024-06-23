@@ -68,6 +68,7 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/tooltip";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const SharedLayout = () => {
   const navigate = useNavigate();
@@ -224,13 +225,10 @@ const SharedLayout = () => {
                 size="icon"
                 className="overflow-hidden rounded-full"
               >
-                <image
-                  src="/placeholder-user.jpg"
-                  width={36}
-                  height={36}
-                  alt="Avatar"
-                  className="overflow-hidden rounded-full"
-                />
+                <Avatar>
+                  <AvatarImage src="/placeholder-user.jpg" alt="Avatar" />
+                  <AvatarFallback>AB</AvatarFallback>
+                </Avatar>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
