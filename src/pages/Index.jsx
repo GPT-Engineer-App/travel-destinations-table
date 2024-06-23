@@ -62,6 +62,7 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/tooltip"
+import { Image } from "@/components/ui/image" // Import the Image component
 
 const countries = [
   { name: "France", capital: "Paris", description: "Known for its cuisine and the Eiffel Tower." },
@@ -132,6 +133,7 @@ const Index = () => {
               <Table>
                 <TableHeader>
                   <TableRow>
+                    <TableHead>Image</TableHead> {/* New column header for images */}
                     <TableHead>Country</TableHead>
                     <TableHead>Capital</TableHead>
                     <TableHead>Description</TableHead>
@@ -140,6 +142,13 @@ const Index = () => {
                 <TableBody>
                   {countries.map((country, index) => (
                     <TableRow key={index}>
+                      <TableCell>
+                        <Image
+                          src="/placeholder-image.jpg"
+                          alt={`${country.name} image`}
+                          className="w-10 h-10 object-cover rounded-full"
+                        />
+                      </TableCell> {/* New cell with placeholder image */}
                       <TableCell>{country.name}</TableCell>
                       <TableCell>{country.capital}</TableCell>
                       <TableCell>{country.description}</TableCell>
