@@ -115,7 +115,7 @@ const Index = () => {
             <Button size="sm" className="h-8 gap-1">
               <PlusCircle className="h-3.5 w-3.5" />
               <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
-                Add Product
+                Add Country
               </span>
             </Button>
           </div>
@@ -123,9 +123,9 @@ const Index = () => {
         <TabsContent value="all">
           <Card x-chunk="dashboard-06-chunk-0">
             <CardHeader>
-              <CardTitle>Products</CardTitle>
+              <CardTitle>Countries</CardTitle>
               <CardDescription>
-                Manage your products and view their sales performance.
+                Manage your countries and view their details.
               </CardDescription>
             </CardHeader>
             <CardContent>
